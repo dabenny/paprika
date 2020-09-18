@@ -55,3 +55,32 @@ Tavola Esagonale - Gioco e formazione
 <Stream: itag="249" mime_type="audio/webm" abr="50kbps" acodec="opus" progressive="False" type="audio">
 <Stream: itag="250" mime_type="audio/webm" abr="70kbps" acodec="opus" progressive="False" type="audio">
 <Stream: itag="251" mime_type="audio/webm" abr="160kbps" acodec="opus" progressive="False" type="audio">
+
+
+### Running on Heroku
+
+Install Heroku CLI
+
+> heroku login
+
+polling -> web-hook
+
+[Webhooks](https://github.com/python-telegram-bot/python-telegram-bot/wiki/Webhooks#heroku)
+
+Create the [Procfile](https://devcenter.heroku.com/articles/procfile)
+
+> web: python3 bot.py
+
+e le dipendenze devono essere salvate nel file requirements.txt
+
+> pipenv shell
+> pip freeze > requirements.txt
+
+L'App verrà automaticamente avviata dopo
+
+> git push heroku master
+
+Per leggere i log invece:
+
+> heroku logs -t
+
