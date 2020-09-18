@@ -1,0 +1,18 @@
+Coda in parallelo lo scaricamento dei video
+Pakage per Heroku
+
+
+NUmero di thread/download in esecuzione. Limitarli??
+    <class 'urllib.error.URLError'>
+---
+
+
+yt.streams
+... .filter(progressive=True, file_extension='mp4')
+... .order_by('resolution')
+... .desc()
+... .first()
+... .download()
+
+yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc()
+yt.streams.filter(type='audio').first().download('/home/daniele/Scaricati/Podcast')

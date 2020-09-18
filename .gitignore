@@ -1,0 +1,5 @@
+paprika_env/
+.env
+
+.vscode/
+*.session
